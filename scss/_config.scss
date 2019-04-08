@@ -145,6 +145,18 @@ $accent-3-900: #27241d;
   font-family: "Acrom Medium";
   src: url(/dist/Fonts/Acrom-Medium.ttf);
 }
+@font-face {
+  font-family: "Brother 1816";
+  src: url(/dist/Fonts/Brother-1816-Regular.ttf);
+}
+@font-face {
+  font-family: "Brother medium";
+  src: url(/dist/Fonts/Brother-1816-Medium.ttf);
+}
+@font-face {
+  font-family: "Brother Book";
+  src: url(/dist/Fonts/Brother-1816-Book.ttf);
+}
 
 //TODOs Media Query Mixins
 @mixin mediaSm {
