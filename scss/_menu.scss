@@ -1,49 +1,54 @@
 // Menu Button
-.menu-btn {
+.McButton {
+  width: 44px;
+  height: 3px;
+  color: $primary-900;
   position: absolute;
-  z-index: 3;
-  right: 35px;
-  top: 35px;
+  top: 6rem;
+  left: 123rem;
+  z-index: 1;
+  height: 20.35px;
   cursor: pointer;
-  @include easeOut;
-
-  .btn-line {
-    width: 28px;
-    height: 3px;
-    margin: 0 0 5px 0;
-    background: set-text-color($primary-color);
-    @include easeOut;
+  &::before {
+    content: "";
+    position: absolute;
+    background: #000;
+    left: 0;
+    top: 32rem;
+    right: 0;
+    bottom: 0;
   }
 
-  // Rotate Into X With Menu Lines
-  &.close {
-    transform: rotate(180deg);
-
-    .btn-line {
-      // Line 1 - Rotate
-      &:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-      }
-
-      // Line 2 - Hide
-      &:nth-child(2) {
-        opacity: 0;
-      }
-
-      // Line 3 - Rotate
-      &:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -6px);
-      }
+  b {
+    position: absolute;
+    left: 0;
+    width: 44px;
+    height: 3px;
+    background-color: $primary-900;
+    &:nth-child(1) {
+      top: 0;
     }
+    &:nth-child(2) {
+      top: 50%;
+    }
+    &:nth-child(3) {
+      top: 100%;
+    }
+  }
+} /* McButton */
+
+// Menu Overlay
+.logo-light {
+  b {
+    background-color: $primary-50;
   }
 }
 
-// Menu Overlay
 .menu {
   position: fixed;
-  top: 0;
+  font-family: "Product Sans Regular";
   width: 100%;
-  opacity: 0.9;
+  letter-spacing: 1.8px;
   visibility: hidden;
 
   &.show {
@@ -65,7 +70,7 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background: darken($primary-color, 5);
+    background: $tertiary-700-ch;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
@@ -78,7 +83,7 @@
 
   // Branding Side
   &-branding {
-    background: $primary-color;
+    background: $tertiary-900-ch;
     transform: translate3d(0, 100%, 0);
     @include easeOut;
 
@@ -90,9 +95,9 @@
     .portrait {
       width: 250px;
       height: 250px;
-      background: url('../img/portrait.jpg');
+      background: url("../img/portrait.jpg");
       border-radius: 50%;
-      border: solid 3px $secondary-color;
+      border: solid 3px $tertiary-50;
     }
   }
 
@@ -106,7 +111,7 @@
     }
 
     &.current > a {
-      color: $secondary-color;
+      color: #fff;
     }
   }
 
@@ -117,12 +122,12 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: set-text-color($primary-color);
+    color: $primary-300;
     text-decoration: none;
     @include easeOut;
 
     &:hover {
-      color: $secondary-color;
+      color: $primary-50;
     }
   }
 }
