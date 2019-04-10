@@ -603,6 +603,7 @@ h3 {
   h2.lg-heading,
   h3.lg-heading {
     font-size: 6rem;
+    margin-bottom: -4rem;
     color: #423d33; }
   h1.sm-heading,
   h2.sm-heading,
@@ -725,7 +726,9 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
-    margin: auto;
+    margin: 0 auto;
+    margin-top: 5.5rem;
+    margin-bottom: 22rem;
     border-radius: 50%;
     border: #27ab83 2px solid; }
   .about-info .bio {
@@ -733,15 +736,40 @@ main {
     font-size: 3.5rem; }
   .about-info .job-1 {
     grid-area: job1; }
+    .about-info .job-1 h3 {
+      margin: 0rem 12.5rem; }
   .about-info .job-2 {
     grid-area: job2; }
+    .about-info .job-2 h3 {
+      margin: 0rem 12rem; }
   .about-info .job-3 {
     grid-area: job3; }
+    .about-info .job-3 h3 {
+      margin: 0rem 13.5rem; }
   .about-info .job {
+    background: #d9e2ec;
+    text-align: center;
     padding: 1.5rem;
     border-radius: 5px;
+    font-family: 'Brother Book';
     font-size: 2.2rem;
-    border-left: #0f609b 5px solid; }
+    border-top: #0f609b 5px solid;
+    box-shadow: 0 10px 15px rgba(38, 129, 194, 0.287), 0 3px 6px rgba(5, 30, 51, 0.52); }
+    .about-info .job h6 {
+      margin: 2rem 0rem;
+      font-size: 2rem;
+      font-weight: 900;
+      color: #02233a; }
+    .about-info .job h3 {
+      background: #c2d0df;
+      color: #102a43;
+      font-style: bold;
+      padding: .3rem 0 0.3rem 0;
+      font-family: 'Acrom Bold';
+      border-radius: 100px; }
+    .about-info .job p {
+      color: #102a43;
+      line-height: 1.9; }
 
 .boxes {
   display: flex;
@@ -751,6 +779,7 @@ main {
   margin-top: 1rem; }
   .boxes div {
     font-size: 2rem;
+    border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     transition: all 0.3s ease-out; }
@@ -762,11 +791,6 @@ main {
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem; }
-
-#main-footer {
-  text-align: center;
-  padding: 1rem;
-  height: 60px; }
 
 @media screen and (min-width: 1171px) {
   .projects {
