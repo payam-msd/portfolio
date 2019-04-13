@@ -93,14 +93,14 @@ $accent-3-900: #27241d;
 //   }
 // }
 
-// // Set Text Color
-// @function set-text-color($color) {
-//   @if (lightness($color) > 40) {
-//     @return #000;
-//   } @else {
-//     @return #fff;
-//   }
-// }
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) < 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
 //TODOs Fonts
 @font-face {
   font-family: " Effra Medium";

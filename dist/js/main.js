@@ -3,6 +3,7 @@ const menuBtn = document.querySelector(".McButton");
 const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".menu-nav");
 const menuBranding = document.querySelector(".menu-branding");
+const navBg = document.querySelector(".navigation__background");
 const navItems = document.querySelectorAll(".nav-item");
 
 // Set Initial State Of Menu
@@ -13,6 +14,7 @@ menuBtn.addEventListener("click", toggleMenu);
 function toggleMenu() {
   if (!showMenu) {
     menuBtn.classList.add("logo-light");
+    navBg.classList.add('remove_bg');
     menu.classList.add("show");
     menuNav.classList.add("show");
     menuBranding.classList.add("show");
@@ -22,6 +24,7 @@ function toggleMenu() {
     showMenu = true;
   } else {
     menuBtn.classList.remove("logo-light");
+    navBg.classList.remove('remove_bg');
     menu.classList.remove("show");
     menuNav.classList.remove("show");
     menuBranding.classList.remove("show");
