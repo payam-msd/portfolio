@@ -38,11 +38,14 @@ h3 {
 
   &.lg-heading {
     font-size: 6rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     color: $accent-3-800;
+    h1 {
+      margin-top: 13vh;
+    }
 
     @include respond(phone) {
-      font-size: 3.7rem;
+      font-size: 3.9rem;
     }
   }
 
@@ -51,7 +54,7 @@ h3 {
     background: $secondary-200-ch;
     border-radius: 10px;
     font-size: 3rem;
-    padding-left: 2rem;
+    padding-left: 2.3rem;
     height: 5%;
     width: 45%;
     display: inline-block;
@@ -97,16 +100,17 @@ main {
   padding: 2.5rem;
   min-height: calc(100vh - 60px);
   @include respond(phone) {
-    padding: 2rem;
+    padding: 0rem;
   }
-
   h1 {
-    margin-top: 13vh;
     @include respond(phone) {
-      margin-top: 10vh;
+      margin-top: 12vh;
+      margin-left: 2rem;
     }
   }
-
+  .name_heading {
+    margin-top: 13vh !important;
+  }
   .icons {
     position: relative;
     margin-top: 3.5rem;
@@ -186,17 +190,21 @@ main {
 }
 
 .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 5rem;
   padding-left: 8rem;
+  width: 40%;
   @include respond(phone) {
-    padding-left: 1rem;
+    padding-left: 1.5rem;
     padding-top: 1rem;
+    width: 100%;
   }
 }
 
 .btn1,
 .btn2 {
-  display: block;
   font-size: 2rem;
   text-transform: uppercase;
   font-family: "Interstate Bold";
@@ -207,27 +215,25 @@ main {
 
 .btn1 {
   border: 2px solid $accent-1-500;
-  display: inline;
   border-radius: 100px;
   padding: 1.2rem 2rem;
   margin-right: 10rem;
   box-shadow: 0 10px 15px rgba(214, 69, 69, 0.239),
     0 3px 6px rgba(214, 69, 69, 0.383);
   @include respond(phone) {
-    padding: 0.8rem 1.5rem;
+    padding: 0.6rem 1.5rem;
     margin-right: 2rem;
   }
 }
 
 .btn2 {
-  display: inline-block;
   border: 2px solid $accent-2-500;
   border-radius: 100px;
   padding: 1.2rem 2rem;
   box-shadow: 0 10px 15px rgba(214, 185, 69, 0.349),
     0 3px 6px rgba(214, 185, 69, 0.383);
   @include respond(phone) {
-    padding: 0.5rem 1.5rem;
+    padding: 0.6rem 1.5rem;
     margin-left: auto;
   }
 }
@@ -259,21 +265,27 @@ main {
     border-radius: 50%;
     border: $secondary-500 2px solid;
     @include respond(phone) {
-      margin-bottom: 2rem;
+      margin: 2rem auto 2rem auto;
     }
   }
 
   .bio {
+    font-family: "Acrom Medium";
+    text-transform: capitalize;
     grid-area: bio;
     font-size: 3.5rem;
+    padding: 1.5rem;
     @include respond(phone) {
-      font-size: 2.8rem;
+      font-size: 2.5rem;
+    }
+    p {
+      text-align: left;
+      line-height: 1.7;
     }
   }
 
   .job-1 {
     grid-area: job1;
-
     h3 {
       margin: 0rem 12.5rem;
     }
@@ -319,6 +331,9 @@ main {
       padding: 0.3rem 0 0.3rem 0;
       font-family: "Acrom BOLD";
       border-radius: 100px;
+      @include respond(phone) {
+        margin: 0rem 11rem;
+      }
     }
 
     p {
@@ -352,16 +367,17 @@ main {
     font-size: 8rem;
     margin: auto;
     padding: 5rem;
+    padding-top: 1rem;
     line-height: 1.1;
     @include respond(phone) {
       font-size: 6rem;
-      padding: 3.5rem;
+      padding: 2.5rem;
     }
   }
 }
 .right__props {
   right: 0;
-  background: url(/dist/img/Img12.jpg);
+  background: url(/img/Img12.jpg);
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -378,34 +394,12 @@ main {
   justify-content: center;
   align-items: flex-start;
   margin-left: 4rem;
+  @include respond(phone) {
+    margin-top: 2rem;
+  }
 
   div {
     font-size: 1.8rem;
     margin-bottom: 3rem;
   }
 }
-
-// Button Styles
-// .btn {
-//   display: block;
-//   padding: 0.5rem 1rem;
-//   border: 0;
-//   margin-bottom: 0.3rem;
-
-//   &:hover {
-//     background: $accent-2-500;
-//     color: $accent-2-900;
-//   }
-// }
-
-// .btn-dark {
-//   @extend .btn;
-//   background: $accent-2-300;
-//   color: #fff;
-// }
-
-// .btn-light {
-//   @extend .btn;
-//   background: $accent-1-100;
-//   color: #333;
-// }

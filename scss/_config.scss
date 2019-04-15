@@ -72,27 +72,6 @@ $accent-3-900: #27241d;
   transition: all 0.3s ease-out;
 }
 
-// @mixin background {
-//   @if $show-home-image {
-//     &#bg-img {
-//       background: $secondary-50;
-//       background-attachment: fixed;
-//       background-size: cover;
-
-//       &:after {
-//         content: "";
-//         position: absolute;
-//         top: 0;
-//         right: 0;
-//         width: 100%;
-//         height: 100%;
-//         z-index: -1;
-//         background: rgba($accent-1-100, $background-opacity);
-//       }
-//     }
-//   }
-// }
-
 // Set Text Color
 @function set-text-color($color) {
   @if (lightness($color) < 40) {
@@ -104,78 +83,53 @@ $accent-3-900: #27241d;
 //TODOs Fonts
 @font-face {
   font-family: " Effra Medium";
-  src: url(/dist/Fonts/Effra-Medium.otf);
+  src: url("../Fonts/Effra-Medium.otf");
 }
 @font-face {
   font-family: "Effra Regular";
-  src: url(/dist/Fonts/Effra-Regular.otf);
+  src: url("../Fonts/Effra-Regular.otf");
 }
 @font-face {
   font-family: "Gotham Medium";
-  src: url(/dist/Fonts/GothamPro-Medium.ttf);
+  src: url("../Fonts/GothamPro-Medium.ttf");
 }
 @font-face {
   font-family: "Gotham";
-  src: url(/dist/Fonts/GothamPro.ttf);
+  src: url("../Fonts/GothamPro.ttf");
 }
 @font-face {
   font-family: "Interstate Bold";
-  src: url(/dist/Fonts/Product-Sans-Bold.ttf);
+  src: url("../Fonts/Interstate-Bold.otf");
 }
 @font-face {
   font-family: "Interstate Light";
-  src: url(/dist/Fonts/InterstatePlus-Light.otf);
+  src: url("../Fonts/InterstatePlus-Light.otf");
 }
 @font-face {
   font-family: "Product Sans Bold";
-  src: url(/dist/Fonts/Product-Sans-Bold.ttf);
+  src: url("../Fonts/Product-Sans-Bold.ttf");
 }
 @font-face {
   font-family: "Product Sans Regular";
-  src: url(/dist/Fonts/Product-Sans-Regular.ttf);
+  src: url("../Fonts/Product-Sans-Regular.ttf");
 }
 @font-face {
   font-family: "Acrom Bold";
-  src: url(/dist/Fonts/Acrom-Bold.ttf);
+  src: url("../Fonts/Acrom-Bold.ttf");
 }
 @font-face {
   font-family: "Acrom Medium";
-  src: url(/dist/Fonts/Acrom-Medium.ttf);
+  src: url("../Fonts/Acrom-Medium.ttf");
 }
 @font-face {
   font-family: "Brother 1816";
-  src: url(/dist/Fonts/Brother-1816-Regular.ttf);
+  src: url("../Fonts/Brother-1816-Regular.ttf");
 }
 @font-face {
   font-family: "Brother medium";
-  src: url(/dist/Fonts/Brother-1816-Medium.ttf);
+  src: url("../Fonts/Brother-1816-Book.ttf");
 }
 @font-face {
   font-family: "Brother Book";
-  src: url(/dist/Fonts/Brother-1816-Book.ttf);
-}
-
-//TODOs Media Query Mixins
-@mixin mediaSm {
-  @media screen and (max-width: 500px) {
-    @content;
-  }
-}
-
-@mixin mediaMd {
-  @media screen and (max-width: 768px) {
-    @content;
-  }
-}
-
-@mixin mediaLg {
-  @media screen and (min-width: 769px) and (max-width: 1170px) {
-    @content;
-  }
-}
-
-@mixin mediaXl {
-  @media screen and (min-width: 1171px) {
-    @content;
-  }
+  src: url("../Fonts/Brother-1816-Book.ttf");
 }

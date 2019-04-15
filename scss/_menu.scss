@@ -21,6 +21,10 @@
     visibility: visible;
     animation: pulse-ring 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -20s infinite;
   }
+  @include respond(phone) {
+    top: 3.5rem;
+    right: 3.5rem;
+  }
 }
 @keyframes pulse-ring {
   0% {
@@ -73,6 +77,10 @@
     &:nth-child(3) {
       top: 100%;
     }
+  }
+  @include respond(phone) {
+    top: 5rem;
+    right: 3.4rem;
   }
 } /* McButton */
 
