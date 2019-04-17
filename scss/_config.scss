@@ -67,6 +67,7 @@ $accent-3-600: #625d52;
 $accent-3-700: #504a40;
 $accent-3-800: #423d33;
 $accent-3-900: #27241d;
+$accent-3-900-ch: hsl(42, 10%, 3%);
 
 @mixin easeOut {
   transition: all 0.3s ease-out;
@@ -132,4 +133,8 @@ $accent-3-900: #27241d;
 @font-face {
   font-family: "Brother Book";
   src: url("../Fonts/Brother-1816-Book.ttf");
+}
+@font-face {
+  font-family: "Druk wide";
+  src: url("../Fonts/DrukWide-Medium.otf");
 }
