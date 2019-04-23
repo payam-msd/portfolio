@@ -1,0 +1,46 @@
+{
+  "name": "portfolio-v2",
+  "version": "2.0.0",
+  "description": "my portfolio web app",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next -p 7777",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/payam-msd/portfolio.git"
+  },
+  "author": "payam-dev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/payam-msd/portfolio/issues"
+  },
+  "homepage": "https://github.com/payam-msd/portfolio#readme",
+  "dependencies": {
+    "next": "^8.1.0",
+    "next-compose-plugins": "^2.1.1",
+    "nprogress": "^0.2.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.2.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^9.0.0",
+    "babel-plugin-styled-components": "^1.10.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-wesbos": "0.0.19",
+    "eslint-plugin-html": "^5.0.3",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react-hooks": "^1.6.0",
+    "prettier": "^1.17.0"
+  }
+}
