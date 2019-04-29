@@ -47,7 +47,7 @@
   position: fixed;
   top: 5.6rem;
   right: 5.1rem;
-  z-index: 2;
+  z-index: 3;
   padding-bottom: 2rem;
   cursor: pointer;
   &:hover ~ .navigation__background {
@@ -109,6 +109,7 @@
 
   &.show {
     visibility: visible;
+    z-index: 2;
   }
 
   &-branding,

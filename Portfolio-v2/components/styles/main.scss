@@ -1,7 +1,6 @@
-@import "_mediaQuery.scss";
 @import "_config.scss";
+@import "_mediaQuery.scss";
 @import "_menu.scss";
-@import "_work.scss";
 
 *,
 *::after,
@@ -520,3 +519,4 @@ main {
     width: 100%;
   }
 }
+@import "_work.scss";
