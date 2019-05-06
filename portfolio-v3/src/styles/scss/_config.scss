@@ -1,0 +1,140 @@
+//TODOsColors
+$primary-50: #dceefb;
+$primary-100: #b6e0fe;
+$primary-200: #84c5f4;
+$primary-300: #62b0e8;
+$primary-400: #4098d7;
+$primary-500: #2680c2;
+$primary-600: #186faf;
+$primary-700: #0f609b;
+$primary-800: #0a558c;
+$primary-900: #003e6b;
+
+$secondary-50: #effcf6;
+$secondary-100: #c6f7e2;
+$secondary-200-ch: hsla(156, 73%, 74%, 0.554);
+$secondary-200: hsl(156, 73%, 74%);
+$secondary-300: #65d6ad;
+$secondary-400: #3ebd93;
+$secondary-500: #27ab83;
+$secondary-600: #199473;
+$secondary-700: #147d64;
+$secondary-800: #0c6b58;
+$secondary-900: #014d40;
+
+$tertiary-50: #f0f4f8;
+$tertiary-100: #d9e2ec;
+$tertiary-200: #bcccdc;
+$tertiary-300: #9fb3c8;
+$tertiary-400: #829ab1;
+$tertiary-500: #627d98;
+$tertiary-600: #486581;
+$tertiary-700: #334e68;
+$tertiary-700-ch: rgba(51, 78, 104, 0.9);
+$tertiary-800: #243b53;
+$tertiary-900: #102a43;
+$tertiary-900-ch: rgba(16, 42, 67, 0.9);
+
+$accent-1-50: #ffeeee;
+$accent-1-100: #facdcd;
+$accent-1-200: #f29b9b;
+$accent-1-300: #e66a6a;
+$accent-1-400: #d64545;
+$accent-1-500: #ba2525;
+$accent-1-600: #a61b1b;
+$accent-1-700: #911111;
+$accent-1-800: #780a0a;
+$accent-1-900: #610404;
+
+$accent-2-50: #fffaeb;
+$accent-2-100: #fcefc7;
+$accent-2-200: #f8e3a3;
+$accent-2-300: #f9da8b;
+$accent-2-400: #f7d070;
+$accent-2-500: #e9b949;
+$accent-2-600: #c99a2e;
+$accent-2-700: #a27c1a;
+$accent-2-800: #7c5e10;
+$accent-2-900: #513c06;
+
+$accent-3-50: #faf9f7;
+$accent-3-100: #e8e6e1;
+$accent-3-200: #d3cec4;
+$accent-3-300: #b8b2a7;
+$accent-3-400: #a39e93;
+$accent-3-500: #857f72;
+$accent-3-600: #625d52;
+$accent-3-700: #504a40;
+$accent-3-800: #423d33;
+$accent-3-900: #27241d;
+$accent-3-900-ch: hsl(42, 10%, 3%);
+
+@mixin easeOut {
+  transition: all 0.3s ease-out;
+}
+
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) < 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+//TODOs Fonts
+@font-face {
+  font-family: " Effra Medium";
+  src: url("/static/Fonts/Effra-Medium.otf");
+}
+@font-face {
+  font-family: "Effra Regular";
+  src: url("/static/Fonts/Effra-Regular.otf");
+}
+@font-face {
+  font-family: "Gotham Medium";
+  src: url("/static/Fonts/GothamPro-Medium.ttf");
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("/static/Fonts/GothamPro.ttf");
+}
+@font-face {
+  font-family: "Interstate Bold";
+  src: url("/static/Fonts/Interstate-Bold.otf");
+}
+@font-face {
+  font-family: "Interstate Light";
+  src: url("/static/Fonts/InterstatePlus-Light.otf");
+}
+@font-face {
+  font-family: "Product Sans Bold";
+  src: url("/static/Fonts/Product-Sans-Bold.ttf");
+}
+@font-face {
+  font-family: "Product Sans Regular";
+  src: url("/static/Fonts/Product-Sans-Regular.ttf");
+}
+@font-face {
+  font-family: "Acrom Bold";
+  src: url("/static/Fonts/Acrom-Bold.ttf");
+}
+@font-face {
+  font-family: "Acrom Medium";
+  src: url("/static/Fonts/Acrom-Medium.ttf");
+}
+@font-face {
+  font-family: "Brother 1816";
+  src: url("/static/Fonts/Brother-1816-Regular.ttf");
+}
+@font-face {
+  font-family: "Brother medium";
+  src: url("/static/Fonts/Brother-1816-Book.ttf");
+}
+@font-face {
+  font-family: "Brother Book";
+  src: url("/static/Fonts/Brother-1816-Book.ttf");
+}
+@font-face {
+  font-family: "Druk wide";
+  src: url("/static/Fonts/DrukWide-Medium.otf");
+}
