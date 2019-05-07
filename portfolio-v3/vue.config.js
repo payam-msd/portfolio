@@ -1,4 +1,4 @@
-// const path = require("path");
+const path = require("path");
 module.exports = {
   css: {
     loaderOptions: {
@@ -6,7 +6,7 @@ module.exports = {
         test: /\.s[a|c]ss$/,
         loader: "style!css!sass",
         data: `
-            @import "@/styles/scss/_config.scss";
+            @import "~@/styles/scss/_config.scss";
             @import "@/styles/scss/_mediaQuery.scss";
         `
       }
@@ -17,12 +17,11 @@ module.exports = {
       host: "localhost",
       port: 3000
     }
+  },
+  pluginOptions: {
+    "style-resources-loader": {
+      preProcessor: "scss",
+      patterns: [path.resolve(__dirname, "./src/styles/scss/main.scss")]
+    }
   }
-  //     pluginOptions: {
-  //       "style-resources-loader": {
-  //         preProcessor: "scss",
-  //         patterns: [path.resolve(__dirname, "./src/sass/scss/main.scss")]
-  //       }
-  //     }
-  //   },
 };

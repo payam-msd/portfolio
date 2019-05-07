@@ -1,6 +1,6 @@
 <template>
   <header>
-    <a class="McButton" data="hamburger-menu">
+    <a class="McButton" data="hamburger-menu" @click="isEnabled = !isEnabled">
       <svg
         class="ham hamRotate ham4"
         viewBox="0 0 100 100"
@@ -41,8 +41,12 @@
 </template>
 <script>
 export default {
-  name: "Navbar"
+  name: "Navbar",
+  data: {
+    isEnabled: false
+  }
 };
 </script>
 <style lang="scss" scoped>
+@import "@/styles/scss/main.scss";
 </style>

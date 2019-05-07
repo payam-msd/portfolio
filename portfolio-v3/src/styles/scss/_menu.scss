@@ -1,7 +1,7 @@
 // Menu Button
 .navigation__background {
-  background-color: $accent-3-100;
-  opacity: 0.5;
+  background-color: $accent-3-50;
+  opacity: 1;
   width: 5.2rem;
   height: 5.2rem;
   position: absolute;
@@ -43,49 +43,51 @@
   }
 }
 .McButton {
-  width: 44px;
-  position: fixed;
-  top: 5.6rem;
-  right: 5.1rem;
-  z-index: 3;
-  padding-bottom: 2rem;
-  cursor: pointer;
+  position: absolute;
+  margin: 0;
+  overflow: hidden;
+  top: 3.2rem;
+  right: 4.3rem;
+  z-index: 20;
   &:hover ~ .navigation__background {
     opacity: 1;
     &::before {
       visibility: hidden;
     }
   }
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 32rem;
-    right: 0;
-    bottom: 0;
-  }
+}
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #000;
+  stroke-width: 5;
+  stroke-linecap: round;
+}
 
-  b {
-    position: absolute;
-    left: 0;
-    width: 35px;
-    height: 0.2rem !important;
-    background-color: set-text-color($primary-900);
-    &:nth-child(1) {
-      top: 0;
-    }
-    &:nth-child(2) {
-      top: 50%;
-    }
-    &:nth-child(3) {
-      top: 100%;
-    }
-  }
-  @include respond(phone) {
-    top: 5rem;
-    right: 3.4rem;
-  }
-} /* McButton */
+.ham4 .top {
+  stroke-dasharray: 40 121;
+}
+.ham4 .bottom {
+  stroke-dasharray: 40 121;
+}
+.ham4.active .top {
+  stroke-dashoffset: -68px;
+}
+.ham4.active .bottom {
+  stroke-dashoffset: -68px;
+}
 
 // Menu Overlay
 .logo-light {

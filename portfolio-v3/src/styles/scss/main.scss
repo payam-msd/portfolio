@@ -1,3 +1,8 @@
+@import "config";
+@import "mediaQuery";
+@import "menu";
+@import "work";
+
 *,
 *::after,
 *::before {
@@ -235,7 +240,7 @@ main {
     margin-top: 1%;
   }
   &__link {
-    font-size: 2rem;
+    font-size: 2.1rem;
     text-transform: uppercase;
     font-family: "Brother medium";
     @include respond(tab-port) {
@@ -249,10 +254,12 @@ main {
     border: 2px solid $primary-600;
     background: #d5edff7a;
     border-radius: 100px;
-    padding: 0.5rem 2rem;
+    padding: 0.7rem 2rem 0.8rem;
     margin-right: 10%;
-    box-shadow: 0 10px 15px rgba(24, 112, 175, 0.209),
-      0 3px 6px rgba(24, 112, 175, 0.303);
+    // box-shadow: 0 10px 15px rgba(24, 112, 175, 0.209),
+    //   0 3px 6px rgba(24, 112, 175, 0.303);
+    box-shadow: 0 10px 30px rgba(24, 112, 175, 0.209),
+      0 -6px 52px rgba(24, 112, 175, 0.293);
     a {
       color: $primary-800;
     }
@@ -264,10 +271,12 @@ main {
   &__item-2 {
     border: 2px solid $accent-2-500;
     border-radius: 100px;
-    padding: 0.5rem 2rem;
+    padding: 0.6rem 2rem 0.7rem;
     background: #f0d5939a;
-    box-shadow: 0 10px 15px rgba(214, 185, 69, 0.349),
-      0 3px 6px rgba(214, 185, 69, 0.383);
+    // box-shadow: 0 10px 15px rgba(214, 185, 69, 0.349),
+    //   0 3px 6px rgba(214, 185, 69, 0.383);
+    box-shadow: 0 8px 17px rgba(214, 185, 69, 0.349),
+      0 0.4rem 11rem rgba(214, 185, 69, 0.583);
     a {
       color: $accent-2-900;
     }
@@ -324,7 +333,7 @@ main {
 
   &__link {
     position: absolute;
-    font-family: "Acrom Medium";
+    font-family: "Brother medium";
     margin-top: 4rem;
     padding: 0.5rem;
     border-radius: 100px;
@@ -348,8 +357,8 @@ main {
   &__svg {
     position: fixed;
     width: 50%;
-    right: 0;
-    top: 13rem;
+    right: 1.3rem;
+    top: 14rem;
     padding: 1.5rem;
     visibility: visible;
     z-index: 1;
@@ -370,7 +379,7 @@ main {
   }
 }
 .textBox {
-  padding-top: 7.5rem;
+  padding-top: 2.5rem;
   h1 {
     width: 50%;
     text-align: center;
@@ -403,6 +412,7 @@ main {
   }
   &__name {
     font-family: "Gotham";
+    font-weight: 600;
     font-size: 6rem;
     margin-left: -3rem;
     margin-bottom: 7rem;
@@ -434,10 +444,11 @@ main {
     }
   }
   &__mainText {
-    font-family: "Product Sans Bold";
+    font-family: "product sans";
+    font-weight: 400;
     text-align: center;
     margin: 1rem;
-    font-size: 3.7rem;
+    font-size: 4rem;
     letter-spacing: 0.2rem;
     @include respond(tab-port) {
       font-size: 2.7rem;

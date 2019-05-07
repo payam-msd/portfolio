@@ -15,5 +15,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/styles/scss/_menu.scss";
+@import "@/styles/scss/main.scss";
 </style>

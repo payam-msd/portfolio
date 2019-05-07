@@ -2,10 +2,6 @@
   "name": "portfolio-v3",
   "version": "3.0.0",
   "private": true,
-  "repository": {
-    "type": "git",
-    "homepage": "git@github.com:payam-msd/portfolio.git"
-  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -15,12 +11,14 @@
   "dependencies": {
     "core-js": "^2.6.5",
     "css-loader": "^2.1.1",
+    "gsap": "^2.1.2",
     "register-service-worker": "^1.6.2",
     "style-resources-loader": "^1.2.1",
     "vue": "^2.6.10",
     "vue-gh-pages": "^1.19.0",
     "vue-loader": "^15.7.0",
-    "vue-router": "^3.0.3"
+    "vue-router": "^3.0.3",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.7.0",
@@ -57,5 +55,9 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "homepage": "git@github.com:payam-msd/portfolio.git"
+  }
 }
